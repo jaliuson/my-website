@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.Joel {
+  width: 50%;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.Top-header {
+  font-family: Arial Black;
+  font-size: 80px;
+  padding: 40px;
+}
