@@ -9,6 +9,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h1>Coming Soon...</h1>
         <p>Hi! I'm Jason</p>
+        <p>Update test 2</p>
       </header>
     </div>
   );
