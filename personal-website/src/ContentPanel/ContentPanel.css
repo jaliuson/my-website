@@ -1,0 +1,15 @@
+.ContentPane {
+    background-color: #181818;
+    font-family: verdana;
+    border-radius: 1em;
+    min-height: 40vmin;
+    margin-bottom: 30rem;
+    margin-top: 15rem;
+    padding: 1em;
+}
+
+.Scroll {
+    width: 75%;
+    align-items: center;
+    justify-content: center;
+}
