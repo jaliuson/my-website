@@ -12,7 +12,7 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 class App extends Component {
   state = {
     panels: [
-      {title: "Hi, I'm Jason" , content: "This is my website which I've built using React JS" , picture: './Profile.JPG' , direction: 'L'},
+      {title: "Hi, I'm Jason" , content: "This is my website that I've built using React JS" , picture: './Profile.JPG' , direction: 'L'},
       {title: 'About Me' , content: 'Software engineering student at Western University' , picture: "./AboutMe.jpg" , direction: 'R'},
       {title: 'My Work' , content: 'Experienced in OOP and front-end web development' , picture: "./Work.jpg" , direction: 'L'},
       {title: 'Projects' , content: 'Some of my Projects include Android applications for automated equipment and use of machine learning for stock prediction' , picture: "./Project1.jpg" , direction: 'R'},
