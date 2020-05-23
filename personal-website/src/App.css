@@ -1,10 +1,10 @@
 .App {
   text-align: center;
-  font-family: verdana;
+  font-family: verdana;background-image: url("LowPoly.png");
 }
 
 .App-header {
-  background-color: #d64646;
+  background-color: #4648d6;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,12 +15,11 @@
 }
 
 .Custom {
-  background-image: url("LowPoly.jpg");
   min-height: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
+  color: #000000;
 }
 
 
