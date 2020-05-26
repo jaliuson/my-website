@@ -1,23 +1,29 @@
 import React, { Component} from 'react';
 import './App.css';
 import ContentPanel from './ContentPanel/ContentPanel';
+import './ContentPanel/ContentPanel.css'
 
 // Paralax Content------------------------------------------
 import { ParallaxProvider } from 'react-scroll-parallax';
 // Paralax Content------------------------------------------
 
 //Images----------------------------------------------------
-
+import './images/AboutMe.jpg';
+import './images/Contact.jpg';
+import './images/Interest.jpg';
+import './images/Profile.JPG';
+import './images/Project1.jpg';
+import './images/Work.jpg';
 
 class App extends Component {
   state = {
     panels: [
-      {title: "Hi, I'm Jason" , content: "This is my website that I've built using React JS" , picture: './Profile.JPG' , direction: 'L'},
-      {title: 'About Me' , content: 'Software engineering student at Western University' , picture: "./AboutMe.jpg" , direction: 'R'},
-      {title: 'My Work' , content: 'Experienced in OOP and front-end web development' , picture: "./Work.jpg" , direction: 'L'},
-      {title: 'Projects' , content: 'Some of my Projects include Android applications for automated equipment and use of machine learning for stock prediction' , picture: "./Project1.jpg" , direction: 'R'},
-      {title: 'Interets' , content: 'I enjoy running, cycling and ultimate' , picture: "./Interest.jpg" , direction: 'L'},
-      {title: 'contact' , content: 'Connect with me!' , picture: "contact.jpg" , direction: 'R'}
+      {title: "Hi, I'm Jason" , content: "This is my website that I've built using React JS" , direction: 'L'},
+      {title: 'About Me' , content: 'Software engineering student at Western University' , direction: 'R'},
+      {title: 'My Work' , content: 'Experienced in OOP and front-end web development' , direction: 'L'},
+      {title: 'Projects' , content: 'Some of my Projects include Android applications for automated equipment and use of machine learning for stock prediction' , direction: 'R'},
+      {title: 'Interets' , content: 'I enjoy running, cycling and ultimate' , direction: 'L'},
+      {title: 'contact' , content: 'Connect with me!' , direction: 'R'}
     ]
   }
   
@@ -33,32 +39,32 @@ class App extends Component {
               title={this.state.panels[0].title}
               content={this.state.panels[0].content}
               direction={this.state.panels[0].direction}
-            ></ContentPanel>
+            ><img src={require('./images/Profile.JPG')} className="ContentImage"></img></ContentPanel>
             <ContentPanel
               title={this.state.panels[1].title}
               content={this.state.panels[1].content}
               direction={this.state.panels[1].direction}
-            ></ContentPanel>
+            ><img src={require('./images/AboutMe.jpg')} className="ContentImage"></img></ContentPanel>
             <ContentPanel
               title={this.state.panels[2].title}
               content={this.state.panels[2].content}  
               direction={this.state.panels[2].direction}   
-            ></ContentPanel>
+            ><img src={require('./images/Work.jpg')} className="ContentImage"></img></ContentPanel>
             <ContentPanel
               title={this.state.panels[3].title}
               content={this.state.panels[3].content}
               direction={this.state.panels[3].direction}
-            ></ContentPanel>
+            ><img src={require('./images/Project1.jpg')} className="ContentImage"></img></ContentPanel>
             <ContentPanel
               title={this.state.panels[4].title}
               content={this.state.panels[4].content}
               direction={this.state.panels[4].direction}
-           ></ContentPanel>
+           ><img src={require('./images/Interest.jpg')} className="ContentImage"></img></ContentPanel>
             <ContentPanel
               title={this.state.panels[5].title}
               content={this.state.panels[5].content}
               direction={this.state.panels[5].direction}
-            ></ContentPanel>
+            ><img src={require('./images/Contact.jpg')} className="ContentImage"></img></ContentPanel>
           </div>
         </div>
       </ParallaxProvider>

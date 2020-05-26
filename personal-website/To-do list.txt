@@ -1,0 +1,10 @@
+Side Navigation bar
+    - slim icon only, fixed position down left Side
+    - hovering dispalys titles
+
+Parallax 'animations'
+    - floating logos for relevant languages and frameworks used
+    - floating icons for related visuals
+
+Links
+    - hyperlink icons for socials

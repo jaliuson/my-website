@@ -5,6 +5,7 @@ import './ContentPanel.css'
 import { Parallax } from 'react-scroll-parallax';
 // Paralax Content------------------------------------------
 
+
 export class ContentPanel extends Component {
     render() {
         let imageSide = null;
@@ -18,17 +19,19 @@ export class ContentPanel extends Component {
             textAnchor = 'right';
         }
 
-        return (
+        return ( 
             <Parallax className="Scroll" y={[-50, 80]} tagOuter="figure">
                 <div className="ContentPane" style={{flexDirection: imageSide, textAlign: textAnchor}}>
-                    <div className="ContentImage"></div>
+                    <div className="ContentImage">
+                        {this.props.children}
+                    </div>
                     <div className="Text">
                         <h1>{this.props.title}</h1>
                         <p>{this.props.content}</p>
                     </div>
                 </div>
             </Parallax> 
-        )   
+        )        
     }
 }
 
